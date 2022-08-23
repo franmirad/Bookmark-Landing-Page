@@ -1,0 +1,697 @@
+@import url("https://fonts.google.com/specimen/Rubikhttps://fonts.google.com/specimen/Rubik");
+html {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+li {
+  cursor: pointer;
+}
+
+li:hover,
+a:hover {
+  color: hsl(0deg, 94%, 66%);
+  transition: 0.2s;
+}
+
+p {
+  color: hsl(229deg, 8%, 60%);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h2,
+h3 {
+  color: hsl(229deg, 31%, 21%);
+}
+
+.blue-button:hover {
+  color: hsl(231deg, 69%, 60%);
+  background-color: white;
+  border: 2px solid hsl(231deg, 69%, 60%);
+  transition: 0.3s;
+}
+
+.red-button:hover {
+  color: hsl(0deg, 94%, 66%);
+  background-color: white;
+  border: 2px solid hsl(0deg, 94%, 66%);
+  transition: 0.3s;
+}
+
+.gray-button:hover {
+  border: 2px solid hsl(229deg, 31%, 21%);
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------> HEADER <-------------------------------------------------*/
+header {
+  padding: 10px;
+}
+
+/*--------------------------------------> HERO <-------------------------------------------------*/
+.hero-content {
+  max-width: 570px;
+}
+
+.chrome-btn {
+  margin-right: 15px;
+}
+
+/*--------------------------------------> FEATURES <-------------------------------------------------*/
+.features-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.features-buttons {
+  margin-bottom: 50px;
+}
+
+.features-button {
+  margin: 0;
+  color: hsl(229deg, 8%, 60%);
+  padding: 20px 30px 20px 30px;
+  border-bottom: 2px solid hsl(229deg, 8%, 60%);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.features-buttons:hover {
+  margin-bottom: 47px;
+}
+
+.features-button:hover {
+  color: hsl(0deg, 94%, 66%);
+  overflow: hidden;
+  border-bottom: 5px solid hsl(0deg, 94%, 66%);
+}
+
+.features-card {
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right-column {
+  flex-basis: 40%;
+  max-width: 1000px;
+}
+
+#card-1 {
+  display: flex;
+}
+
+#card-2 {
+  display: none;
+}
+
+#card-3 {
+  display: none;
+}
+
+/*--------------------------------------> DOWNLOAD <-------------------------------------------------*/
+.download-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.download-card {
+  text-align: center;
+  max-width: 320px;
+  max-height: 375px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 20px 30px 20px;
+  border-radius: 15px;
+}
+
+.dot-img {
+  margin: 18px 0 18px 0;
+}
+
+/*--------------------------------------> FAQ <-------------------------------------------------*/
+.accordion {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.faq-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.question-box {
+  padding: 15px 5px 15px 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: hsl(229deg, 31%, 21%);
+}
+
+.question-box:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+
+.question-box.selected {
+  color: hsl(0deg, 94%, 66%);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*--------------------------------------> CONTACT <-------------------------------------------------*/
+.contact {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 570px;
+}
+
+.contact-email {
+  padding: 15px;
+  min-width: 250px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 15px;
+}
+
+.contact-logo {
+  margin-right: 10px;
+}
+
+.contact-social {
+  gap: 20px;
+}
+
+/*--------------------------------------> DISPLAY <-------------------------------------------------*/
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/*--------------------------------------> FLEX <-------------------------------------------------*/
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/*--------------------------------------> JUSTIFY <-------------------------------------------------*/
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.right {
+  justify-content: right;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*--------------------------------------> JUSTIFY <-------------------------------------------------*/
+.absolute {
+  position: absolute;
+}
+
+/*--------------------------------------> ALIGN <-------------------------------------------------*/
+.items-center {
+  align-items: center;
+}
+
+/*--------------------------------------> WIDTH <-------------------------------------------------*/
+.width-100 {
+  width: 100%;
+}
+
+/*--------------------------------------> HEIGHT <-------------------------------------------------*/
+.height-100 {
+  height: 100%;
+}
+
+.height-100vh {
+  min-height: 100vh;
+}
+
+/*--------------------------------------> COLOR <-------------------------------------------------*/
+.white {
+  color: white;
+}
+
+.soft-blue {
+  color: hsl(231deg, 69%, 60%);
+}
+
+.soft-red {
+  color: hsl(0deg, 94%, 66%);
+}
+
+.grayish-blue {
+  color: hsl(229deg, 8%, 60%);
+}
+
+.dark-blue {
+  color: hsl(229deg, 31%, 21%);
+}
+
+/*--------------------------------------> BACKGROUND-COLOR <-------------------------------------------------*/
+.bg-soft-blue {
+  background-color: hsl(231deg, 69%, 60%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(218deg, 28%, 13%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+/*--------------------------------------> FONT SIZE<-------------------------------------------------*/
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+/*--------------------------------------> FONT WEIGHT <-------------------------------------------------*/
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+/*--------------------------------------> MARGIN <-------------------------------------------------*/
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mtb-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.m-30 {
+  margin-right: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.m-lr300 {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.mtb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/*--------------------------------------> PADDING <-------------------------------------------------*/
+.p-5 {
+  padding: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.plr-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/*--------------------------------------> RANDOM <-------------------------------------------------*/
+.border-box {
+  box-sizing: border-box;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red-button {
+  font-family: Rubik, sans-serif;
+  color: white;
+  background-color: hsl(0deg, 94%, 66%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.blue-button {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(231deg, 69%, 60%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.gray-button {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229deg, 31%, 21%);
+  background-color: hsla(165deg, 17%, 95%, 0.664);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.width-question {
+  max-width: 800px;
+}
+
+.border-top {
+  border-top: 1px solid hsl(229deg, 8%, 60%);
+}
+
+.border-bottom {
+  border-bottom: 1px solid hsl(229deg, 8%, 60%);
+}
+
+/*--------------------------------------> 1240PX <-------------------------------------------------*/
+@media (max-width: 1240px) and (min-width: 320px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-content h1 {
+    margin-top: 0;
+  }
+  /*--------------------------------------> DOWNNLOAD <-------------------------------------------------*/
+  .download-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /*--------------------------------------> FEATURES <-------------------------------------------------*/
+  .features-card {
+    flex-direction: column;
+  }
+  .features-card .right-column {
+    text-align: center;
+  }
+  /*--------------------------------------> DOWNLOAD<-------------------------------------------------*/
+  .download-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /*--------------------------------------> FAQ <-------------------------------------------------*/
+  .accordion {
+    padding: 5px;
+  }
+  .contact-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-logo {
+    margin: 0;
+  }
+  .contact-items {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .contact-items ul {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .contact-social {
+    margin-bottom: 10px;
+  }
+}
+/*--------------------------------------> 768PX <-------------------------------------------------*/
+@media (max-width: 768px) and (min-width: 320px) {
+  /*--------------------------------------> HERO <-------------------------------------------------*/
+  .sidemenu {
+    display: block;
+  }
+  .header-items {
+    display: none;
+  }
+}
+/*--------------------------------------> 650PX <-------------------------------------------------*/
+@media (max-width: 650px) and (min-width: 320px) {
+  p {
+    padding: 0 5px 0 5px;
+  }
+  /*--------------------------------------> HERO <-------------------------------------------------*/
+  .hero-img img {
+    width: 400px;
+    height: auto;
+  }
+  .left-column img {
+    width: 400px;
+    height: auto;
+  }
+  /*--------------------------------------> FEATURES <-------------------------------------------------*/
+  .features-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .features-buttons:hover {
+    margin-bottom: 20px;
+  }
+  .features-button:hover {
+    color: hsl(0deg, 94%, 66%);
+    border-bottom: 2px solid hsl(0deg, 94%, 66%);
+  }
+  /*--------------------------------------> CONTACT <-------------------------------------------------*/
+  .contact-input {
+    flex-direction: column;
+  }
+  .contact-input input {
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+/*--------------------------------------> 375PX <-------------------------------------------------*/
+@media (max-width: 420px) and (min-width: 320px) {
+  /*--------------------------------------> HERO <-------------------------------------------------*/
+  .hero-img img {
+    width: 300px;
+    height: auto;
+  }
+  .left-column img {
+    width: 300px;
+    height: auto;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .chrome-btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /*--------------------------------------> DOWNLOAD <-------------------------------------------------*/
+  .download-card {
+    padding: 30px 10px 30px 10px;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: hsla(229deg, 31%, 21%, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav-login {
+  border: 2px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 8px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=styles.css.map */

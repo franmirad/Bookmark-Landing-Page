@@ -1,0 +1,197 @@
+html {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+li {
+  cursor: pointer;
+}
+
+li:hover,
+a:hover {
+  color: hsl(0, 94%, 66%);
+  transition: .2s;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h2,
+h3 {
+  color: hsl(229, 31%, 21%);
+}
+
+.blue-button:hover {
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  transition: .3s;
+}
+
+.red-button:hover {
+  color: hsl(0, 94%, 66%);
+  background-color: white;
+  border: 2px solid hsl(0, 94%, 66%);
+  transition: .3s;
+}
+
+.gray-button:hover {
+  border: 2px solid hsl(229, 31%, 21%);
+  transition: .3s;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------> HEADER <-------------------------------------------------*/
+header {
+  padding: 10px;
+}
+
+/*--------------------------------------> HERO <-------------------------------------------------*/
+.hero-content {
+  max-width: 570px;
+}
+
+.chrome-btn {
+  margin-right: 15px;
+}
+
+/*--------------------------------------> FEATURES <-------------------------------------------------*/
+.features-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.features-buttons {
+  margin-bottom: 50px;
+}
+
+.features-button {
+  margin: 0;
+  color: hsl(229, 8%, 60%);
+  padding: 20px 30px 20px 30px;
+  border-bottom: 2px solid hsl(229, 8%, 60%);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.features-buttons:hover {
+  margin-bottom: 47px;
+}
+
+.features-button:hover {
+  color: hsl(0, 94%, 66%);
+  overflow: hidden;
+  border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+
+.features-card {
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right-column {
+  flex-basis: 40%;
+  max-width: 1000px;
+}
+
+#card-1 {
+  display: flex;
+}
+
+#card-2 {
+  display: none;
+}
+
+#card-3 {
+  display: none;
+}
+
+/*--------------------------------------> DOWNLOAD <-------------------------------------------------*/
+.download-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.download-card {
+  text-align: center;
+  max-width: 320px;
+  max-height: 375px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 20px 30px 20px;
+  border-radius: 15px;
+}
+
+.dot-img {
+  margin: 18px 0 18px 0;
+}
+
+/*--------------------------------------> FAQ <-------------------------------------------------*/
+.accordion {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.faq-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.question-box {
+  padding: 15px 5px 15px 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: hsl(229, 31%, 21%);
+}
+
+.question-box:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.question-box.selected {
+  color: hsl(0, 94%, 66%);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*--------------------------------------> CONTACT <-------------------------------------------------*/
+.contact {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 570px;
+}
+
+.contact-email {
+  padding: 15px;
+  min-width: 250px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 15px;
+}
+
+.contact-logo {
+  margin-right: 10px;
+}
+
+.contact-social {
+  gap: 20px;
+}

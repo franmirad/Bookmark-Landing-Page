@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+  <div class="container flex flex-column">
+    <header class="flex space-between items-center">
+      <a href="index.html">
+        <img src="images//logo-bookmark.svg" alt="">
+      </a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">FEATURES</a>
+        <a href="#">PRICING</a>
+        <a href="#">CONTACT</a>
+        <a class="sidenav-login" href="#">LOGIN</a>
+      </div>
+      <div class="sidemenu none pointer">
+        <img src="images/icon-hamburger.svg" alt="" onclick="openNav()" width="28" height="25">
+      </div>
+      <ul class="header-items flex list-none border-box uppercase items-center fw-500 dark-blue gap-20">
+        <li>
+          Features
+        </li>
+        <li>
+          Pricing
+        </li>
+        <li>
+          Contact
+        </li>
+        <button class="uppercase red-button">
+          Login
+        </button>
+      </ul>
+    </header>
+    <div class="hero flex space-between mtb-80">
+      <div class="hero-content">
+        <h1 class="dark-blue fs-60">
+          A Simple Bookmark Manager
+        </h1>
+
+        <p class="mtb-30">
+          A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="hero-buttons">
+          <button class="chrome-btn blue-button">
+            Get it on Chrome
+          </button>
+          <button class="gray-button">
+            Get it on Firefox
+          </button>
+        </div>
+
+      </div>
+      <div class="hero-img">
+        <img src="images/illustration-hero.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="features container flex flex-column align-center">
+    <div class="features-text text-center">
+      <h2 class="fs-40 mtb-30">
+        Features
+      </h2>
+      <p>
+        Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+    </div>
+    <div class="features-buttons inline-flex">
+      <h3 class="features-button text-center" onclick="switchVisible1();">
+        Simple Bookmarking
+      </h3>
+      <h3 class="features-button text-center" onclick="switchVisible2();">
+        Speedy Searching
+      </h3>
+      <h3 class="features-button text-center" onclick="switchVisible3();">
+        Easy Sharing
+      </h3>
+    </div>
+
+    <div class="features-cards" id="features-cards">
+      <div class=" features-card space-between items-center" id="card-1">
+        <div class="left-column">
+          <img src="images/illustration-features-tab-1.svg" alt="">
+        </div>
+        <div class="right-column">
+          <h2 class="mt-20">
+            Bookmark in one click
+          </h2>
+
+          <p class="mtb-30">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.
+          </p>
+
+          <button class="blue-button">
+            More Info
+          </button>
+        </div>
+      </div>
+      <div class=" features-card space-between items-center" id="card-2">
+        <div class="left-column">
+          <img src="images/illustration-features-tab-2.svg" alt="">
+        </div>
+        <div class="right-column">
+          <h2 class="mt-20">
+            Intelligent search
+          </h2>
+
+          <p class="mtb-30">
+            Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+          </p>
+
+          <button class="blue-button">
+            More Info
+          </button>
+        </div>
+      </div>
+      <div class=" features-card space-between items-center" id="card-3">
+        <div class="left-column">
+          <img src="images/illustration-features-tab-3.svg" alt="">
+        </div>
+        <div class="right-column">
+          <h2 class="mt-20">
+            Share your bookmarks
+          </h2>
+
+          <p class="mtb-30">
+            Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.
+          </p>
+
+          <button class="blue-button">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="download container">
+    <div class="download-text text-center">
+      <h2 class="fs-40 mtb-30">Download the extension</h2>
+
+      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.</p>
+    </div>
+    <div class="download-cards flex flex-row space-evenly mt-100 plr-100 mb-100">
+      <div class="download-card flex flex-column mb-100">
+        <div>
+          <img src="images/logo-chrome.svg" alt="">
+        </div>
+        <h3 class="mtb-30">Add to Chrome</h3>
+        <p class="mt-0">Minimum version 62</p>
+        <img class="dot-img" src="images/bg-dots.svg" alt="">
+        <button class="blue-button">Add & Install Extension</button>
+      </div>
+      <div class="download-card flex flex-column mt-50 mb-50">
+        <div>
+          <img src="images/logo-firefox.svg" alt="">
+        </div>
+        <h3 class="mtb-30">Add to Firefox</h3>
+        <p class="mt-0">Minimum version 55</p>
+        <img class="dot-img" src="images/bg-dots.svg" alt="">
+        <button class="blue-button">Add & Install Extension</button>
+      </div>
+      <div class="download-card flex flex-column mt-100">
+        <div>
+          <img src="images/logo-opera.svg" alt="">
+        </div>
+        <h3 class="mtb-30">Add to Opera</h3>
+        <p class="mt-0">Minimum version 46</p>
+        <img class="dot-img" src="images/bg-dots.svg" alt="">
+        <button class="blue-button">Add & Install Extension</button>
+      </div>
+    </div>
+  </div>
+  <div class="faq container mb-100">
+    <div class="faq-text text-center">
+      <h3 class="fs-40 mtb-30">
+        Frequently Asked Questions
+      </h3>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+    </div>
+    <div class="accordion width-question">
+      <div>
+        <div class="question-box flex space-between border-top">
+          What is Bookmark?
+          <img src="images/icon-arrow.svg" alt="" width="20" height="14">
+        </div>
+        <div class="answer mtb-30mtb-30">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </div>
+      </div>
+      <div>
+        <div class="question-box flex space-between border-top">
+          How can I request a new browser?
+          <img src="images/icon-arrow.svg" alt="" width="20" height="14">
+        </div>
+        <div class="answer">
+          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+        </div>
+      </div>
+      <div>
+        <div class="question-box flex space-between border-top">
+          Is there a mobile app?
+          <img src="images/icon-arrow.svg" alt="" width="20" height="14">
+        </div>
+        <div class="answer">
+          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+            sollicitudin ex et ultricies bibendum.</p>
+        </div>
+      </div>
+      <div>
+        <div class="question-box flex space-between border-top">
+          What about other Chromium browsers?
+          <img src="images/icon-arrow.svg" alt="" width="20" height="14">
+        </div>
+        <div class="answer border-bottom">
+          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex center">
+      <button class="blue-button">More Info</button>
+    </div>
+  </div>
+  <div class="bg-soft-blue width-100">
+    <div class="contact container flex flex-column items-center">
+      <span class="uppercase white">
+        35,000+ already joined
+      </span>
+
+      <h2 class="white fs-40 text-center mtb-30">
+        Stay up-to-date with what we’re doing
+      </h2>
+      <div class="contact-input flex">
+        <input class="contact-email fs-18" type="email" placeholder="Type your Email here">
+        <button class="red-button">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark-blue">
+    <div class="contact-nav container flex space-between">
+      <div class="contact-items flex items-center pl-5">
+        <a class="contact-logo" href=" index.html">
+          <img src="images//logo-bookmark.svg" alt="">
+        </a>
+        <ul class="flex list-none border-box uppercase items-center fw-500 gap-20 white">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="contact-social flex items-center">
+        <a class="white" href="">
+          <i class='bx bxl-facebook-square bx-md'></i>
+        </a>
+        <a class="white" href="">
+          <i class='bx bxl-twitter bx-md'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <p class="">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Francisco Mirad</a>.
+    </p>
+  </footer>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

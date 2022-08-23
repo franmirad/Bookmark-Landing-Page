@@ -1,0 +1,313 @@
+/*--------------------------------------> DISPLAY <-------------------------------------------------*/
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/*--------------------------------------> FLEX <-------------------------------------------------*/
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/*--------------------------------------> JUSTIFY <-------------------------------------------------*/
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.right {
+  justify-content: right;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*--------------------------------------> JUSTIFY <-------------------------------------------------*/
+.absolute {
+  position: absolute;
+}
+
+/*--------------------------------------> ALIGN <-------------------------------------------------*/
+.items-center {
+  align-items: center;
+}
+
+/*--------------------------------------> WIDTH <-------------------------------------------------*/
+.width-100 {
+  width: 100%;
+}
+
+/*--------------------------------------> HEIGHT <-------------------------------------------------*/
+.height-100 {
+  height: 100%;
+}
+
+.height-100vh {
+  min-height: 100vh;
+}
+
+/*--------------------------------------> COLOR <-------------------------------------------------*/
+.white {
+  color: white;
+}
+
+.soft-blue {
+  color: hsl(231, 69%, 60%);
+}
+
+.soft-red {
+  color: hsl(0, 94%, 66%);
+}
+
+.grayish-blue {
+  color: hsl(229, 8%, 60%);
+}
+
+.dark-blue {
+  color: hsl(229, 31%, 21%);
+}
+
+/*--------------------------------------> BACKGROUND-COLOR <-------------------------------------------------*/
+
+.bg-soft-blue {
+  background-color: hsl(231, 69%, 60%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(218, 28%, 13%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+/*--------------------------------------> FONT SIZE<-------------------------------------------------*/
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+/*--------------------------------------> FONT WEIGHT <-------------------------------------------------*/
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+/*--------------------------------------> MARGIN <-------------------------------------------------*/
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mtb-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.m-30 {
+  margin-right: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.m-lr300 {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.mtb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/*--------------------------------------> PADDING <-------------------------------------------------*/
+.p-5 {
+  padding: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.plr-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/*--------------------------------------> RANDOM <-------------------------------------------------*/
+.border-box {
+  box-sizing: border-box;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red-button {
+  font-family: Rubik, sans-serif;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.blue-button {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(231, 69%, 60%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.gray-button {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 31%, 21%);
+  background-color: hsla(165, 17%, 95%, 0.664);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.width-question {
+  max-width: 800px;
+}
+
+.border-top {
+  border-top: 1px solid hsl(229, 8%, 60%);
+}
+
+.border-bottom {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
